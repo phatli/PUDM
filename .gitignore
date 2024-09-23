@@ -1,0 +1,9 @@
+*.pyc
+build
+dist
+*.egg-info
+*ninja*
+*.o
+*.so
+*.pkl
+test

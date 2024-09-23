@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  pudm:
+    build: .
+    container_name: pudm
+    stdin_open: true
+    tty: true
+    ipc: host
+    volumes:
+      - .:/root/pudm
+      - /mnt/datasets:/datasets
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

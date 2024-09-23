@@ -1,0 +1,31 @@
+{
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "pudm",
+  "workspaceFolder": "/root/pudm",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "eamodio.gitlens",
+        "ms-toolsai.jupyter",
+        "christian-kohler.path-intellisense",
+        "sleistner.vscode-fileutils",
+        "exodiusstudios.comment-anchors",
+        "shd101wyy.markdown-preview-enhanced",
+        "elazarcoh.simply-view-image-for-python-debugging",
+        "yzhang.markdown-all-in-one",
+        "njpwerner.autodocstring",
+        "esbenp.prettier-vscode",
+        "donjayamanne.githistory",
+        "github.vscode-pull-request-github",
+        "gerrnperl.outline-map",
+        "ms-python.autopep8",
+        "GitHub.copilot",
+        "github.copilot-chat"
+      ]
+    }
+  },
+  "remoteUser": "root"
+}
