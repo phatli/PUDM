@@ -1,11 +1,12 @@
 #include <torch/serialize/tensor.h>
 #include <vector>
-#include <THC/THC.h>
+
 #include <ATen/cuda/CUDAContext.h>
+#include <ATen/cuda/CUDAEvent.h>
 
 #include "labelstat_cuda_kernel.h"
 
-extern THCState *state;
+
 
 
 #define CHECK_CUDA(x) TORCH_CHECK(x.is_cuda(), #x, " must be a CUDAtensor ")

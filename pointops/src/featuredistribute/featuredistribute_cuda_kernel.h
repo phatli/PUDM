@@ -3,6 +3,7 @@
 #include <torch/serialize/tensor.h>
 #include <vector>
 #include <ATen/cuda/CUDAContext.h>
+#include <ATen/cuda/CUDAEvent.h>
 
 void featuredistribute_cuda(int b, int n, int m, at::Tensor max_xyz_tensor, at::Tensor xyz_tensor, at::Tensor distribute_idx_tensor);
 void featuregather_forward_cuda(int b, int n, int m, int c, at::Tensor max_feature_tensor, at::Tensor distribute_idx_tensor, at::Tensor distribute_feature_tensor);

@@ -10,7 +10,6 @@ import copy
 import os
 import glob
 import re
-from chainer import cuda
 from pointnet2.util import normalize_point_cloud
 import pickle
 import json

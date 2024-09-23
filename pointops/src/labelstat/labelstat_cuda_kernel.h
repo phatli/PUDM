@@ -3,6 +3,7 @@
 #include <torch/serialize/tensor.h>
 #include <vector>
 #include <ATen/cuda/CUDAContext.h>
+#include <ATen/cuda/CUDAEvent.h>
 
 void labelstat_and_ballquery_cuda_fast(int b, int n, int m, float radius, int nsample, int nclass,
     at::Tensor new_xyz_tensor, at::Tensor xyz_tensor, at::Tensor label_stat_tensor, at::Tensor idx_tensor, at::Tensor new_label_stat_tensor);
